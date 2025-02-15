@@ -3,7 +3,7 @@
   inputs.nixos-hardware.url = "github:nixos/nixos-hardware";
 
   # Some dependencies of this flake are not yet available on non linux systems
-  inputs.systems.url = "github:nix-systems/x86_64-linux";
+  inputs.systems.url = "github:nix-systems/riscv64-linux";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.flake-utils.inputs.systems.follows = "systems";
 
