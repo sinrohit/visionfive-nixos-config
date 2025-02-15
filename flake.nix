@@ -5,7 +5,7 @@
   };
 
   outputs = inputs@{ self, nixpkgs, nixos-hardware, ... }: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.vision = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux"; # This is your build system
       modules = [
         {
